@@ -64,7 +64,7 @@ names(summary2)<-sapply(names(summary2),paste,".mean",sep="")
 names(summary2)[names(summary2)=='subject.mean']<-"by.subject"
 names(summary2)[names(summary2)=='action.mean']<-"by.activity"
 names(summary2)[names(summary2)=="asource.mean"]<-"source"
-write.table(summary2,file="tidy.txt")                           #step5
+write.table(summary2,file="tidy.txt",row.name=FALSE)                           #step5
 closeAllConnections()
 
 
